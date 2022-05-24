@@ -1,0 +1,298 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local HAXX2 = Instance.new("ScreenGui")
+local UI1 = Instance.new("Frame")
+local Container = Instance.new("Frame")
+local Padding = Instance.new("UIPadding")
+local UnderLine = Instance.new("Frame")
+local Toggle = Instance.new("TextButton")
+local Window = Instance.new("TextLabel")
+local BackGround = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local button = Instance.new("TextButton")
+local Esp = Instance.new("TextLabel")
+local Run = Instance.new("TextButton")
+
+--Properties:
+
+HAXX2.Name = "HAXX2"
+HAXX2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+UI1.Name = "UI1"
+UI1.Parent = HAXX2
+UI1.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UI1.BorderSizePixel = 0
+UI1.Position = UDim2.new(0, 34, 0, 35)
+UI1.Size = UDim2.new(0, 330, 0, 32)
+
+Container.Name = "Container"
+Container.Parent = UI1
+Container.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Container.BorderSizePixel = 0
+Container.ClipsDescendants = true
+Container.Position = UDim2.new(0, 0, 1, 0)
+Container.Size = UDim2.new(0, 330, 0, 134)
+
+Padding.Name = "Padding"
+Padding.Parent = Container
+Padding.PaddingLeft = UDim.new(0, 10)
+
+UnderLine.Name = "UnderLine"
+UnderLine.Parent = UI1
+UnderLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnderLine.BorderSizePixel = 0
+UnderLine.Position = UDim2.new(0, 0, 1, -1)
+UnderLine.Size = UDim2.new(1, 0, 0, 1)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = UI1
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.BackgroundTransparency = 1.000
+Toggle.Position = UDim2.new(1, -25, 0, 0)
+Toggle.Size = UDim2.new(0, 25, 0.71875, 0)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "-"
+Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.TextSize = 50.000
+
+Window.Name = "Window"
+Window.Parent = UI1
+Window.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Window.BackgroundTransparency = 1.000
+Window.Position = UDim2.new(0, 0, 0.03125, 0)
+Window.Size = UDim2.new(1, 0, 0.966666639, 0)
+Window.Font = Enum.Font.SourceSans
+Window.Text = "KoAimbot Alpha"
+Window.TextColor3 = Color3.fromRGB(255, 255, 255)
+Window.TextSize = 25.000
+Window.TextXAlignment = Enum.TextXAlignment.Left
+
+BackGround.Name = "BackGround"
+BackGround.Parent = UI1
+BackGround.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BackGround.BorderSizePixel = 0
+BackGround.ClipsDescendants = true
+BackGround.Position = UDim2.new(0, 0, 0.96875, 0)
+BackGround.Size = UDim2.new(0, 330, 0, 134)
+
+TextLabel.Parent = BackGround
+TextLabel.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0212121215, 0, 0.0451492779, 0)
+TextLabel.Size = UDim2.new(0, 323, 0, 28)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Aimbot"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextStrokeTransparency = 100.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+button.Name = "button"
+button.Parent = TextLabel
+button.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+button.BorderColor3 = Color3.fromRGB(25, 25, 25)
+button.BorderSizePixel = 2
+button.Position = UDim2.new(0, 290, 0, 3)
+button.Selectable = false
+button.Size = UDim2.new(0, 25, 0, 25)
+button.Font = Enum.Font.SourceSans
+button.Text = ""
+button.TextColor3 = Color3.fromRGB(255, 255, 255)
+button.TextSize = 23.000
+
+Esp.Name = "Esp"
+Esp.Parent = BackGround
+Esp.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Esp.BackgroundTransparency = 1.000
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(0.0212121215, 0, 0.298880607, 0)
+Esp.Size = UDim2.new(0, 323, 0, 28)
+Esp.Font = Enum.Font.SourceSans
+Esp.Text = "Esp"
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextSize = 18.000
+Esp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextStrokeTransparency = 100.000
+Esp.TextWrapped = true
+Esp.TextXAlignment = Enum.TextXAlignment.Left
+
+Run.Name = "Run"
+Run.Parent = Esp
+Run.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Run.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Run.BorderSizePixel = 2
+Run.Position = UDim2.new(0, 266, 0, 3)
+Run.Selectable = false
+Run.Size = UDim2.new(0, 49, 0, 25)
+Run.Font = Enum.Font.SourceSans
+Run.Text = "Run"
+Run.TextColor3 = Color3.fromRGB(255, 255, 255)
+Run.TextSize = 23.000
+
+-- Scripts:
+
+local function MKCQ_fake_script() -- UnderLine.Rainbow Frame 
+	local script = Instance.new('LocalScript', UnderLine)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.05)do
+	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+	
+	--Enjoy ;) dont change anything. I didnt script this so i dont know if you can change but its adviced not 2
+end
+coroutine.wrap(MKCQ_fake_script)()
+local function TXGHHP_fake_script() -- Toggle.LocalScript 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local back = script.Parent.Parent.BackGround
+	local con = script.Parent.Parent.Container
+	
+	local window = {
+			count = 0;
+			toggles = {},
+			closed = false;
+		}
+		script.Parent.MouseButton1Click:connect(function()
+			window.closed = not window.closed
+			script.Parent.Text = (window.closed and "+" or "-")
+			if script.Parent.Text == "+" then
+				back:TweenSize(UDim2.new(0, 330,0, 0), "Out", "Sine", 0.5)
+				con:TweenSize(UDim2.new(0, 330,0, 0), "Out", "Sine", 0.5)
+				wait(0.2) do
+				con.Visible = false
+				end
+			else
+				back:TweenSize(UDim2.new(0, 330,4, 0), "Out", "Sine", 0.5)
+				con:TweenSize(UDim2.new(0, 330,4, 0), "Out", "Sine", 0.5)
+				wait(0.1) do
+				con.Visible = true
+				end
+				end
+			
+		end)
+	
+end
+coroutine.wrap(TXGHHP_fake_script)()
+local function CIGCQ_fake_script() -- UI1.LocalScript 
+	local script = Instance.new('LocalScript', UI1)
+
+	local dragger = {}; 
+	local resizer = {};
+	
+	do
+		local mouse = game:GetService("Players").LocalPlayer:GetMouse();
+		local inputService = game:GetService('UserInputService');
+		local heartbeat = game:GetService("RunService").Heartbeat;
+		-- // credits to Ririchi / Inori for this cute drag function :)
+		function dragger.new(frame)
+		    local s, event = pcall(function()
+		    	return frame.MouseEnter
+		    end)
+	
+		    if s then
+		    	frame.Active = true;
+	
+		    	event:connect(function()
+		    		local input = frame.InputBegan:connect(function(key)
+		    			if key.UserInputType == Enum.UserInputType.MouseButton1 then
+		    				local objectPosition = Vector2.new(mouse.X - frame.AbsolutePosition.X, mouse.Y - frame.AbsolutePosition.Y);
+		    				while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+		    					frame:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X + (frame.Size.X.Offset * frame.AnchorPoint.X), 0, mouse.Y - objectPosition.Y + (frame.Size.Y.Offset * frame.AnchorPoint.Y)), 'Out', 'Quad', 0.1, true);
+		    				end
+		    			end
+		    		end)
+	
+		    		local leave;
+		    		leave = frame.MouseLeave:connect(function()
+		    			input:disconnect();
+		    			leave:disconnect();
+		    		end)
+		    	end)
+		    end
+		end
+		
+		function resizer.new(p, s)
+			p:GetPropertyChangedSignal('AbsoluteSize'):connect(function()
+				s.Size = UDim2.new(s.Size.X.Scale, s.Size.X.Offset, s.Size.Y.Scale, p.AbsoluteSize.Y);
+			end)
+		end
+	end
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(CIGCQ_fake_script)()
+local function VHJJ_fake_script() -- button.LocalScript 
+	local script = Instance.new('LocalScript', button)
+
+	_G.aimbot = false
+	local camera = game.Workspace.CurrentCamera
+	local localplayer = game:GetService("Players").LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.aimbot == false then
+			_G.aimbot = true
+			script.Parent.TextColor3 = Color3.fromRGB(0,170,0)
+			script.Parent.Text = "✓"
+			function closestplayer()
+				local dist = math.huge -- math.huge means a really large number, 1M+.
+				local target = nil --- nil means no value
+				for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+					if v ~= localplayer then
+						if v.Character and v.Character:FindFirstChild("Head") and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
+							local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
+							if magnitude < dist then
+								dist = magnitude
+								target = v
+							end
+	
+						end
+					end
+				end
+				return target
+			end
+	
+		else
+			_G.aimbot = false
+			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
+			script.Parent.Text = ""
+		end
+	end)
+	
+	local settings = {
+		keybind = Enum.UserInputType.MouseButton2
+	}
+	
+	local UIS = game:GetService("UserInputService")
+	local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
+	
+	UIS.InputBegan:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then
+			aiming = true
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
+			aiming = false
+		end
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if aiming then
+			camera.CFrame = CFrame.new(camera.CFrame.Position,closestplayer().Character.Head.Position) -- locks into the HEAD
+		end
+	end)
+end
+coroutine.wrap(VHJJ_fake_script)()
